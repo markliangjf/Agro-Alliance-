@@ -9,7 +9,7 @@ Static website for https://agro-alliance.sg/.
 - Published source history: https://github.com/markliangjf/Agro-Alliance-/commits/main/
 - Deployment results: https://github.com/markliangjf/Agro-Alliance-/actions
 
-Every completed update is saved as a new commit on `versions`. Each commit records a complete source tree, including its images, maps and video, and a description of the changes. Prior commits remain accessible. A backup commit does not by itself mean the version was published.
+Every completed update is documented in VERSIONS.md with its changes and Singapore timestamp, and saved as a new commit on `versions`. Each commit records a complete source tree, including its images, maps and video, and a description of the changes. Prior commits remain accessible. A backup commit does not by itself mean the version was published.
 
 To retrieve a version, open its commit, select **Browse files**, then **Code > Download ZIP**. Open `index.html` after extraction, or run `python scripts/build_preview.py` to create a self-contained HTML preview.
 
@@ -25,7 +25,9 @@ Production uses GitHub Pages from `main`. Updating `main` may publish immediatel
 
 ## Current saved update: 2026-10-20
 
-**Preview only; not deployed.**
+**Approved for publication by the user on 2026-10-20.**
+
+See [VERSIONS.md](VERSIONS.md) for change summaries, Singapore timestamps and links to every recorded backup and deployment. The Actions result confirms publication status.
 
 - Emphasize Agro Alliance in the homepage and company section.
 - Present Fujian Yaoda as manufacturing background.
