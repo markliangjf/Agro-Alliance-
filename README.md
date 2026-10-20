@@ -2,16 +2,13 @@
 
 Static website for https://agro-alliance.sg/.
 
-## Version records
+## Official backups
 
-- Latest saved work: https://github.com/markliangjf/Agro-Alliance-/tree/versions
-- All saved versions: https://github.com/markliangjf/Agro-Alliance-/commits/versions/
-- Published source history: https://github.com/markliangjf/Agro-Alliance-/commits/main/
-- Deployment results: https://github.com/markliangjf/Agro-Alliance-/actions
+Open [VERSIONS.md](VERSIONS.md) for the five verified successful releases, their Singapore deployment times, change summaries, source downloads and deployment evidence. Drafts, previews and undeployed records have been removed from this catalog.
 
-Every completed update is documented in VERSIONS.md with its changes and Singapore timestamp, and saved as a new commit on `versions`. Each commit records a complete source tree, including its images, maps and video, and a description of the changes. Prior commits remain accessible. A backup commit does not by itself mean the version was published.
+Only successfully deployed official versions are backed up. Drafts and previews stay local. Raw Git history includes implementation steps and catalog maintenance; it is not the formal backup list. Existing ancestry remains to preserve official commit IDs and restore links.
 
-To retrieve a version, open its commit, select **Browse files**, then **Code > Download ZIP**. Open `index.html` after extraction, or run `python scripts/build_preview.py` to create a self-contained HTML preview.
+To download a release, open its source link in VERSIONS.md and choose **Code > Download ZIP**. Open index.html after extraction, or run python scripts/build_preview.py to build the self-contained preview.
 
 ## Local working copy
 
@@ -21,13 +18,13 @@ The generated `agro-alliance-brand-preview.html` is a convenience export. The ve
 
 ## Deployment
 
-Production uses GitHub Pages from `main`. Updating `main` may publish immediately. Save preview work on `versions`; publish only after the user explicitly authorizes deployment of the reviewed version. Retain previous history; never force-push or reset it to roll back. Restore an earlier source tree with a new commit when a rollback is requested.
+Production uses GitHub Pages from main. Publish only after explicit user authorization, verify deployment success and live content, then add the official version to VERSIONS.md and synchronize versions. Failed deployments do not create formal backups. Requested catalog-only maintenance may update documentation on versions without publishing or creating a website release. Preserve these rules and the catalog in the next authorized release.
 
-## Current saved update: 2026-10-20
+## Current official release: 2026-10-20
 
-**Approved for publication by the user on 2026-10-20.**
+**Successfully deployed on 2026-10-20 at 14:43:20 SGT (workflow last update). Source: 865e187.**
 
-See [VERSIONS.md](VERSIONS.md) for change summaries, Singapore timestamps and links to every recorded backup and deployment. The Actions result confirms publication status.
+See [VERSIONS.md](VERSIONS.md) for change summaries, Singapore timestamps and links to successful official backups and deployments. The Actions result confirms publication status.
 
 - Emphasize Agro Alliance in the homepage and company section.
 - Present Fujian Yaoda as manufacturing background.
