@@ -30,4 +30,4 @@
 
 /* Agro Alliance brand hierarchy */
 .hero-brand-name{font-size:clamp(24px,2.4vw,34px);font-weight:700;letter-spacing:-.035em;color:var(--navy);line-height:1.15;margin-bottom:18px}.hero-intro{margin-bottom:18px}
-
+.photo-credits{margin-top:8px;font-size:11px}.photo-credits a{color:var(--navy);text-underline-offset:3px}
