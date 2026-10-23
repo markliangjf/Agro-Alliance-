@@ -20,15 +20,15 @@ The generated `agro-alliance-brand-preview.html` is a convenience export. The ve
 
 Production uses GitHub Pages from main. Publish only after explicit user authorization, verify deployment success and live content, then add the official version to VERSIONS.md and synchronize versions. Failed deployments do not create formal backups. Requested catalog-only maintenance may update documentation on versions without publishing or creating a website release. Preserve these rules and the catalog in the next authorized release.
 
-## Current official release: 2026-10-21
+## Current official release: 2026-10-22
 
-**Successfully deployed at 2026-10-21 02:05:12 SGT (workflow last update). Source: [94a93b5](https://github.com/markliangjf/Agro-Alliance-/tree/94a93b5da853bb86d9f68b856a856cb83a8e3b70).**
+**Successfully deployed at 2026-10-22 01:18:38 SGT (workflow last update). Source: [53bb17b](https://github.com/markliangjf/Agro-Alliance-/tree/53bb17b21e4d7cb89d4d57045070cfc0707fe8ca).**
 
-- Title: Agro Alliance | International Fertilizer Trade.
-- Add brand favicon PNG and multi-size ICO, preserving the full company logo.
-- Add WebSite identity and explicit Organization logo metadata; align search/share title and description.
-- Add robots.txt and sitemap.xml.
-- Successful deployment and live HTTP 200 checks confirmed for HTML, icons, robots.txt and sitemap.xml. Desktop preview was visually inspected. Google search display remains subject to recrawling and selection. Search Console submission and hosting redirects were not changed.
+- Add potassium nitrate and calcium nitrate product cards, filters, comparison rows and enquiry selections.
+- Update homepage product range and search/share descriptions.
+- Use public-domain reference photographs by Ondrej Mangl, with on-page reference-image labels and source credits. Full source details: [assets/PHOTO-SOURCES.md](assets/PHOTO-SOURCES.md).
+- Specifications, appearance and documents remain subject to enquiry; no unverified grades or certifications added.
+- GitHub Pages succeeded. Live HTML and both photo URLs returned HTTP 200. Desktop photo layout and image loading inspected; new enquiry selections were verified during preview. No mobile visual review performed for this release.
 
 See [VERSIONS.md](VERSIONS.md) for successful official versions and deployment evidence.
 

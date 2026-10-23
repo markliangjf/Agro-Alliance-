@@ -1,11 +1,12 @@
 # 正式版本备份
 
-仅列出已核实 **部署成功** 的正式版本，共 **6 版**。草稿、预览及未部署记录已从本目录移除。
+仅列出已核实 **部署成功** 的正式版本，共 **7 版**。草稿、预览及未部署记录已从本目录移除。
 
 所有时间均为新加坡时间（SGT，UTC+8）。下表时间采用成功部署工作流的最后更新时间；精确任务时间可查看部署记录。
 
 | 部署时间（SGT） | 完整源码备份 | 本版改动 | 部署记录 |
 |---|---|---|---|
+| 2026-10-22 01:18:38 | [53bb17b](https://github.com/markliangjf/Agro-Alliance-/tree/53bb17b21e4d7cb89d4d57045070cfc0707fe8ca) | 新增硝酸钾与硝酸钙产品卡片、筛选、对照表及询盘选项；同步首页与 SEO 简介；采用公有领域实拍参考图，注明图片用途、作者和授权来源。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/39642538613) |
 | 2026-10-21 02:05:12 | [94a93b5](https://github.com/markliangjf/Agro-Alliance-/tree/94a93b5da853bb86d9f68b856a856cb83a8e3b70) | 标题改为 Agro Alliance &#124; International Fertilizer Trade；新增 PNG/ICO 品牌图标；完善网站名称、公司 Logo 和品牌结构化信息；统一搜索简介与分享标题；新增 robots.txt 和 sitemap.xml。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/39471570104) |
 | 2026-10-20 14:43:20 | [865e187](https://github.com/markliangjf/Agro-Alliance-/tree/865e1874a019a7c6b3d63e6462eb911dae4a0b88) | 突出 Agro Alliance；Yaoda 作为生产背景；首页改为 Send an Enquiry；修复中文及符号乱码，保留尿素重点、多地供货和地图。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/39381965310) |
 | 2026-10-19 20:31:47 | [8ccc614](https://github.com/markliangjf/Agro-Alliance-/tree/8ccc614aa0fb14e0402d43ed2b4223f5005251b6) | 将首页询盘入口改为面向所有产品的 Discuss your requirements。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/39252630025) |
