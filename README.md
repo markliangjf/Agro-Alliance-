@@ -20,24 +20,25 @@ The generated `agro-alliance-brand-preview.html` is a convenience export. The ve
 
 Production uses GitHub Pages from main. Publish only after explicit user authorization, verify deployment success and live content, then add the official version to VERSIONS.md and synchronize versions. Failed deployments do not create formal backups. Requested catalog-only maintenance may update documentation on versions without publishing or creating a website release. Preserve these rules and the catalog in the next authorized release.
 
-## Current official release: 2026-10-22
+## Current official release: 2026-10-24
 
-**Successfully deployed at 2026-10-22 01:18:38 SGT (workflow last update). Source: [53bb17b](https://github.com/markliangjf/Agro-Alliance-/tree/53bb17b21e4d7cb89d4d57045070cfc0707fe8ca).**
+**Successfully deployed at 2026-10-24 02:03:19 SGT (workflow last update). Source: [ceea8ce](https://github.com/markliangjf/Agro-Alliance-/tree/ceea8ce1041ab37b93872c596b6096d89c972692).**
 
-- Add potassium nitrate and calcium nitrate product cards, filters, comparison rows and enquiry selections.
-- Update homepage product range and search/share descriptions.
-- Use public-domain reference photographs by Ondrej Mangl, with on-page reference-image labels and source credits. Full source details: [assets/PHOTO-SOURCES.md](assets/PHOTO-SOURCES.md).
-- Specifications, appearance and documents remain subject to enquiry; no unverified grades or certifications added.
-- GitHub Pages succeeded. Live HTML and both photo URLs returned HTTP 200. Desktop photo layout and image loading inspected; new enquiry selections were verified during preview. No mobile visual review performed for this release.
+- Refresh homepage proportions, emphasize Agro Alliance, and remove the repeated hero logo.
+- Add scroll reveals and hover interactions with reduced-motion support; simplify homepage text and collapse product details.
+- Add company.html with company profile, manufacturing heritage, supply and shipping, documentation guidance and location maps.
+- Keep the eight-product range and general enquiries; add the company page to sitemap.xml.
+- JavaScript syntax and internal links checked; desktop, tablet and mobile layouts visually reviewed before deployment. GitHub Pages succeeded; live HTML, CSS, JavaScript and sitemap returned HTTP 200 and matched approved source text. Live company navigation and image loading verified with no browser console errors observed.
 
 See [VERSIONS.md](VERSIONS.md) for successful official versions and deployment evidence.
 
 ## Source files
 
-- `index.html`: page content
+- `index.html`: homepage content
+- `company.html`: company profile, supply and locations
 - `assets/site.css`: responsive styles
 - `assets/site.js`: navigation, product filters, gallery and enquiry builder
 - `assets/optimized/`: displayed photographs and maps
 - `assets/media/`: video
-- `scripts/build_preview.py`: standalone preview export
+- `scripts/build_preview.py`: linked standalone previews for both pages
 

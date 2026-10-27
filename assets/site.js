@@ -43,16 +43,99 @@
 
   const cards = [...document.querySelectorAll('.product-card')];
   const filters = [...document.querySelectorAll('[data-filter]')];
-  filters.forEach(button => button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-    let visible = 0;
-    cards.forEach(card => {
-      card.hidden = filter !== 'all' && card.dataset.family !== filter;
-      if (!card.hidden) { reveal(card, visible * 45); visible++; }
+  const productPager = document.querySelector('.product-pagination');
+  const productPageStatus = document.getElementById('product-page-status');
+  const productPrev = document.getElementById('products-prev');
+  const productNext = document.getElementById('products-next');
+  const productPageHeading = document.getElementById('product-page-heading');
+  const productPageLinks = document.getElementById('product-page-links');
+  const productNextLabel = document.querySelector('.product-next-label');
+  const wideProducts = matchMedia('(min-width: 1200px)');
+  let productFilter = 'all';
+  let productPage = 0;
+  const pageSize = () => desktop.matches ? (wideProducts.matches ? 4 : 3) : cards.length || 1;
+  function renderProducts(animate = false) {
+    if (!cards.length) return;
+    const matched = cards.filter(card => productFilter === 'all' || card.dataset.family === productFilter);
+    const size = pageSize();
+    const pages = Math.max(1, Math.ceil(matched.length / size));
+    productPage = Math.max(0, Math.min(productPage, pages - 1));
+    const visible = matched.slice(productPage * size, (productPage + 1) * size);
+    cards.forEach(card => { card.hidden = !visible.includes(card); });
+    if (animate) visible.forEach((card, i) => reveal(card, i * 45));
+    filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === productFilter)));
+    document.getElementById('product-count').textContent = matched.length + (matched.length === 1 ? ' product' : ' products') + (pages > 1 ? ' / ' + pages + ' pages' : '');
+    productPager.hidden = pages <= 1;
+    productPageStatus.textContent = 'Showing ' + (productPage * size + 1) + '\u2013' + Math.min((productPage + 1) * size, matched.length) + ' of ' + matched.length;
+    productPrev.disabled = productPage === 0;
+    const remaining = matched.length - (productPage + 1) * size;
+    productNextLabel.textContent = remaining > 0 ? 'View ' + Math.min(size, remaining) + ' more products' : 'Back to first products';
+    productNext.setAttribute('aria-label', productNextLabel.textContent);
+    productPageHeading.textContent = remaining > 0 ? remaining + ' more products to explore' : 'You have seen all ' + matched.length + ' products';
+    productNext.dataset.wrap = String(productPage === pages - 1);
+    // Retain existing page controls so keyboard focus survives a page change.
+    if (productPageLinks.children.length !== pages) {
+      productPageLinks.replaceChildren();
+      for (let i = 0; i < pages; i++) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = String(i + 1).padStart(2, '0');
+        button.setAttribute('aria-label', 'Product page ' + (i + 1));
+        button.setAttribute('aria-controls', 'product-grid');
+        button.addEventListener('click', () => {
+          productPager.classList.remove('invite-motion');
+          productPage = i;
+          renderProducts(true);
+          queueReadingPosition();
+        });
+        productPageLinks.append(button);
+      }
+    }
+    [...productPageLinks.children].forEach((button, i) => {
+      if (i === productPage) button.setAttribute('aria-current', 'page');
+      else button.removeAttribute('aria-current');
     });
-    document.getElementById('product-count').textContent = visible + (visible === 1 ? ' product' : ' products');
+  }
+  filters.forEach(button => button.addEventListener('click', () => {
+    productFilter = button.dataset.filter;
+    productPage = 0;
+    renderProducts(true);
   }));
+  function changeProductPage(delta) {
+    productPager.classList.remove('invite-motion');
+    productPage = delta > 0 && productNext.dataset.wrap === 'true' ? 0 : productPage + delta;
+    renderProducts(true);
+    // Keep keyboard focus on a visible control at the first/last page.
+    if (document.activeElement === productNext && productNext.disabled) productPrev.focus();
+    else if (document.activeElement === productPrev && productPrev.disabled) productNext.focus();
+    queueReadingPosition();
+  }
+  productPrev?.addEventListener('click', () => changeProductPage(-1));
+  productNext?.addEventListener('click', () => changeProductPage(1));
+  function revealLinkedProduct() {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    const target = cards.find(card => card.id === id);
+    if (!target) return;
+    productFilter = 'all';
+    productPage = Math.floor(cards.indexOf(target) / pageSize());
+    renderProducts();
+    requestAnimationFrame(() => target.scrollIntoView({block:'start',behavior:'instant'}));
+  }
+  desktop.addEventListener('change', () => { productPage = 0; renderProducts(); revealLinkedProduct(); });
+  wideProducts.addEventListener('change', () => { productPage = 0; renderProducts(); revealLinkedProduct(); });
+  addEventListener('hashchange', revealLinkedProduct);
+  renderProducts();
+  revealLinkedProduct();
+  if (productPager && 'IntersectionObserver' in window) {
+    const invitation = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting) && !reducedMotion.matches) {
+        productPager.classList.add('invite-motion');
+        invitation.disconnect();
+      }
+    }, {threshold: .8});
+    invitation.observe(productPager);
+  }
   const productSelect = document.getElementById('quote-product');
   document.querySelectorAll('[data-product]').forEach(link => {
     link.addEventListener('click', () => {

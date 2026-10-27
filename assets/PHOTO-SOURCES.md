@@ -13,3 +13,9 @@ Author: Ondrej Mangl. Source pages identify the photographs as the author's own 
   - https://commons.wikimedia.org/wiki/File:Dusi%C4%8Dnan_v%C3%A1penat%C3%BD.JPG
   - https://upload.wikimedia.org/wikipedia/commons/1/14/Dusi%C4%8Dnan_v%C3%A1penat%C3%BD.JPG
   - Original 640 x 362, 142656 bytes. No pixel alterations; CSS may crop display.
+
+## Company materials supplied 2026-10-26 (Singapore time)
+
+- `optimized/fuqing-campus-render.webp`: user-provided "Refined Bauhaus industrial campus aerial.png", 1944 x 809. Architectural rendering, identified as such wherever displayed. Converted to WebP at original dimensions; no cropping or content changes.
+- `optimized/ammonium-sulphate-bulk-bags.webp`: user-provided `IMG_5820.jpg`, 1536 x 2048. Actual granular ammonium sulphate bulk bag photograph. Converted to WebP at original dimensions; no cropping or content changes.
+- Gallery photography uses `object-fit: contain` to preserve full frames and natural proportions. The packing panel pairs existing and new photographs; no AI-generated background is used.
