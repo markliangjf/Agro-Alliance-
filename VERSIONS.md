@@ -1,11 +1,12 @@
 # 正式版本备份
 
-仅列出已核实 **部署成功** 的正式版本，共 **8 版**。草稿、预览及未部署记录已从本目录移除。
+仅列出已核实 **部署成功** 的正式版本，共 **9 版**。草稿、预览及未部署记录已从本目录移除。
 
 所有时间均为新加坡时间（SGT，UTC+8）。下表时间采用成功部署工作流的最后更新时间；精确任务时间可查看部署记录。
 
 | 部署时间（SGT） | 完整源码备份 | 本版改动 | 部署记录 |
 |---|---|---|---|
+| 2026-10-27 17:33:40 | [8b7759a](https://github.com/markliangjf/Agro-Alliance-/tree/8b7759ad2f9c0212813660c91e9c75382238aa6d) | 调整桌面首页各区块为浏览器视口比例，手机及展开内容保持自然滚动；公司介绍配图换为工厂园区渲染图并注明用途；加入硫酸铵包装实拍，图库按原比例完整展示；强化全部 8 个产品的分页入口、数量提示和页码按钮，加入支持减少动态效果设置的箭头提示。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/40481581008) |
 | 2026-10-24 02:03:19 | [ceea8ce](https://github.com/markliangjf/Agro-Alliance-/tree/ceea8ce1041ab37b93872c596b6096d89c972692) | 首页品牌与排版升级：移除重复 Logo、突出 Agro Alliance、优化图文比例与手机布局；加入滚动及交互动画；精简主页文字并折叠产品详情；新增独立 Our Company 页面，整合公司背景、发展历程、供应运输、文件说明与地点地图；更新站点地图。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/40000046390) |
 | 2026-10-22 01:18:38 | [53bb17b](https://github.com/markliangjf/Agro-Alliance-/tree/53bb17b21e4d7cb89d4d57045070cfc0707fe8ca) | 新增硝酸钾与硝酸钙产品卡片、筛选、对照表及询盘选项；同步首页与 SEO 简介；采用公有领域实拍参考图，注明图片用途、作者和授权来源。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/39642538613) |
 | 2026-10-21 02:05:12 | [94a93b5](https://github.com/markliangjf/Agro-Alliance-/tree/94a93b5da853bb86d9f68b856a856cb83a8e3b70) | 标题改为 Agro Alliance &#124; International Fertilizer Trade；新增 PNG/ICO 品牌图标；完善网站名称、公司 Logo 和品牌结构化信息；统一搜索简介与分享标题；新增 robots.txt 和 sitemap.xml。 | [成功](https://github.com/markliangjf/Agro-Alliance-/actions/runs/39471570104) |
