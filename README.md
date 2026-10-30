@@ -20,17 +20,17 @@ The generated `agro-alliance-brand-preview.html` is a convenience export. The ve
 
 Production uses GitHub Pages from main. Publish only after explicit user authorization, verify deployment success and live content, then add the official version to VERSIONS.md and synchronize versions. Failed deployments do not create formal backups. Requested catalog-only maintenance may update documentation on versions without publishing or creating a website release. Preserve these rules and the catalog in the next authorized release.
 
-## Current official release: 2026-10-24
+## Current official release: 2026-10-27
 
-**Successfully deployed at 2026-10-24 02:03:19 SGT (workflow last update). Source: [ceea8ce](https://github.com/markliangjf/Agro-Alliance-/tree/ceea8ce1041ab37b93872c596b6096d89c972692).**
+**Successfully deployed at 2026-10-27 17:33:40 SGT (workflow last update). Source: [8b7759a](https://github.com/markliangjf/Agro-Alliance-/tree/8b7759ad2f9c0212813660c91e9c75382238aa6d). Deployment: [successful GitHub Pages run](https://github.com/markliangjf/Agro-Alliance-/actions/runs/40481581008).**
 
-- Refresh homepage proportions, emphasize Agro Alliance, and remove the repeated hero logo.
-- Add scroll reveals and hover interactions with reduced-motion support; simplify homepage text and collapse product details.
-- Add company.html with company profile, manufacturing heritage, supply and shipping, documentation guidance and location maps.
-- Keep the eight-product range and general enquiries; add the company page to sitemap.xml.
-- JavaScript syntax and internal links checked; desktop, tablet and mobile layouts visually reviewed before deployment. GitHub Pages succeeded; live HTML, CSS, JavaScript and sitemap returned HTTP 200 and matched approved source text. Live company navigation and image loading verified with no browser console errors observed.
+- Size desktop homepage sections around the available browser viewport while preserving natural mobile scrolling and readable expanded content.
+- Replace the company teaser image with the supplied industrial campus architectural rendering, clearly labelled as a rendering.
+- Add actual ammonium sulphate packaging photography and preserve full image proportions in the gallery.
+- Make the eight-product range easier to discover with visible counts, prominent next/previous controls, direct page buttons and reduced-motion-aware arrow cues.
+- JavaScript syntax and internal references checked; desktop and mobile previews reviewed. Production HTML, CSS, JavaScript and both new images returned HTTP 200 and matched approved local files. Product pagination verified on the live site.
 
-See [VERSIONS.md](VERSIONS.md) for successful official versions and deployment evidence.
+See [VERSIONS.md](VERSIONS.md) for all nine successful official versions and deployment evidence.
 
 ## Source files
 

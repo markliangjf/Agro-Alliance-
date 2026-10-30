@@ -1,0 +1,81 @@
+/* Enquiries and product guides, October 2026. */
+.home-page #quote-form.enquiry-form{display:block}
+.home-page #quote-form.enquiry-form>.form-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.enquiry-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.enquiry-form .form-intro{margin:8px 0 16px}
+.enquiry-form label small{color:var(--muted);font-weight:400}
+.enquiry-form .quantity-choice{display:flex;align-items:center;gap:9px;margin:8px 0 0;font-size:12px;font-weight:400;cursor:pointer}
+.enquiry-form .quantity-choice input{min-height:0;width:16px;height:16px;margin:0;accent-color:var(--navy)}
+#quote-form.enquiry-form .quantity-choice input{width:16px;min-width:16px;min-height:16px;height:16px;padding:0;margin:0;flex:none}
+.enquiry-form input:disabled{background:#edf1f5;color:#617086}
+.enquiry-form .field-hint{font-size:11px;color:var(--muted);margin-top:5px}
+.enquiry-form .enquiry-extras{border-block:1px solid var(--line);margin:7px 0 18px;padding:0}
+.enquiry-form .enquiry-extras summary{display:flex;justify-content:space-between;align-items:center;min-height:44px;font-size:13px;font-weight:600;color:var(--navy);list-style:none}
+.enquiry-extras summary::-webkit-details-marker{display:none}
+.enquiry-extras[open] summary span{transform:rotate(45deg)}
+.enquiry-extras .details-content{padding-top:10px}
+.enquiry-form .form-actions{display:grid;grid-template-columns:1fr;margin:0;gap:10px}
+.enquiry-form .form-actions .button{font-size:14px;min-height:48px;white-space:normal}
+.enquiry-form .form-alternatives{display:flex;align-items:center;justify-content:center;gap:8px 16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.form-alternatives button{padding:8px 3px;background:transparent;color:var(--navy);font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:4px;min-height:36px}
+.enquiry-form .form-privacy{font-size:11px;margin-top:12px}
+.enquiry-form .preview-note{padding:9px 12px;margin-bottom:16px;border:1px dashed #d29c34;background:#fff9e9;color:#6e4c0c;font-size:12px;border-radius:6px}
+.enquiry-form .form-status[data-state=success]{background:#e8f4ee;color:#215741;border-left:3px solid #39865d}
+.enquiry-form .form-status[data-state=error]{background:#fff1ee;color:#893c2d;border-left:3px solid #bc5c47}
+.enquiry-form .form-status[data-state=preview]{background:#fff9e9;color:#6e4c0c}
+.enquiry-form #new-enquiry{margin-top:12px;background:transparent;color:var(--navy);font-weight:600;text-decoration:underline;padding:8px 0}
+.enquiry-form .bot-trap{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}
+.enquiry-form .fallback-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px;font-size:13px}
+.enquiry-form .fallback-actions button{background:var(--pale);color:var(--navy);padding:9px 12px;border-radius:5px}
+.product-guide-link{display:inline-block;margin-top:12px;color:var(--navy);font-size:13px;font-weight:600}
+.guide-links{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin-top:8px;color:var(--muted)}
+.guide-links a{color:var(--navy);font-weight:600}
+.guide-page{background:#fbfcfe}
+.guide-hero{padding:30px 0 64px;background:linear-gradient(125deg,#edf3fa,#fff 65%)}
+.guide-hero .breadcrumbs{padding:0;margin-bottom:32px;flex-wrap:wrap}
+.guide-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,90px);align-items:center}
+.guide-hero h1{color:var(--navy);font-size:clamp(42px,5vw,76px);font-weight:500;max-width:11ch}
+.guide-lead{color:var(--muted);font-size:18px;line-height:1.75;margin:24px 0;max-width:49ch}
+.guide-hero .hero-actions{margin-top:24px;display:flex;gap:16px;flex-wrap:wrap}
+.guide-image{border:1px solid #d8e3ed;border-radius:14px 42px 14px 14px;overflow:hidden;background:#f1f4f7}
+.guide-image img{width:100%;height:340px;object-fit:contain;background:#edf0f3}
+.guide-image figcaption{font-size:12px;padding:16px 20px;color:var(--muted);background:#fff}
+.guide-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0 0}
+.guide-facts div{border-top:1px solid #cbd7e5;padding-top:12px}
+.guide-facts dt{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.guide-facts dd{margin:5px 0 0;color:var(--navy);font-size:14px;font-weight:600}
+.guide-section{padding:64px 0}
+.guide-section h2{font-size:clamp(30px,3vw,44px);color:var(--navy)}
+.guide-section .section-heading{margin-bottom:28px}
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.guide-grid article{border:1px solid var(--line);border-radius:12px;padding:28px;background:#fff}
+.guide-grid article>span{display:block;color:#3874a8;font-size:12px;margin-bottom:18px}
+.guide-grid h3{font-size:22px;margin-bottom:15px;line-height:1.25}
+.guide-grid p{font-size:15px;color:var(--muted);line-height:1.8}
+.guide-grid a{display:inline-block;margin-top:20px;font-size:14px;color:var(--navy);font-weight:600}
+.guide-two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.guide-two p{color:var(--muted);line-height:1.85;margin-top:20px}
+.guide-two ul{margin:24px 0;padding-left:20px;color:var(--muted)}
+.guide-two li{padding-left:5px;margin-bottom:12px}
+.guide-section.tinted{background:#edf3f8}
+.guide-note{font-size:13px;color:var(--muted);margin-top:25px;padding-top:18px;border-top:1px solid var(--line)}
+.guide-cta{padding:40px;background:var(--navy);color:#fff;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:32px}
+.guide-cta h2{color:#fff;font-size:34px}
+.guide-cta p{color:#dce7f5;margin-top:14px;max-width:48ch}
+.guide-cta .button{background:#fff;color:var(--navy);flex:none}
+.privacy-copy{max-width:850px;padding:52px 0 72px}
+.privacy-copy h1{font-size:44px;color:var(--navy);margin-bottom:24px}
+.privacy-copy h2{font-size:24px;margin:32px 0 14px}
+.privacy-copy p,.privacy-copy li{color:var(--muted);font-size:16px;line-height:1.85}
+.privacy-copy ul{padding-left:22px}
+@media(max-width:650px){.home-page #quote-form.enquiry-form>.form-grid{grid-template-columns:1fr;gap:0}}
+.analytics-choice{position:fixed;bottom:20px;left:20px;max-width:620px;z-index:1000;padding:22px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 45px #0d2b6b22;display:flex;gap:22px;align-items:center}
+.analytics-choice strong{display:block;color:var(--navy);font-size:15px;margin-bottom:7px}
+.analytics-choice span{display:block;color:var(--muted);font-size:12px;line-height:1.7}
+.analytics-choice>div{display:flex;gap:8px;flex-direction:column;flex:none}
+.analytics-choice button{padding:10px 14px;min-height:42px;background:var(--pale);color:var(--navy);border-radius:5px;font-size:12px}
+.analytics-choice button[data-choice=granted]{background:var(--navy);color:#fff}
+[data-analytics-settings]{background:transparent;padding:0;text-align:left;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+@media(min-width:901px){.home-page .contact-grid{grid-template-columns:1fr 1.15fr}.home-page .enquiry-form .field{margin-bottom:12px}.home-page .enquiry-form .form-grid{display:grid}.home-page .enquiry-form .field input,.home-page .enquiry-form .field select{min-height:42px}}
+@media(max-width:900px){.guide-hero-grid{grid-template-columns:1fr}.guide-hero h1{max-width:none;font-size:52px}.guide-image img{height:300px}.guide-grid{grid-template-columns:1fr}.guide-two{grid-template-columns:1fr}.guide-cta{align-items:flex-start;flex-direction:column}.guide-section{padding-block:48px}}
+@media(max-width:650px){.enquiry-form .form-grid{grid-template-columns:1fr;gap:0}.guide-hero{padding-bottom:40px}.guide-hero h1{font-size:42px}.guide-lead{font-size:16px}.guide-facts{gap:12px}.guide-facts dd{font-size:12px}.guide-image img{height:260px}.guide-grid article{padding:24px}.guide-cta{padding:26px}.guide-cta h2{font-size:28px}.analytics-choice{left:12px;right:12px;bottom:12px;flex-direction:column;align-items:stretch;padding:18px;gap:14px}.analytics-choice>div{flex-direction:row}.analytics-choice button{flex:1}.privacy-copy h1{font-size:36px}}
