@@ -20,25 +20,30 @@ The generated `agro-alliance-brand-preview.html` is a convenience export. The ve
 
 Production uses GitHub Pages from main. Publish only after explicit user authorization, verify deployment success and live content, then add the official version to VERSIONS.md and synchronize versions. Failed deployments do not create formal backups. Requested catalog-only maintenance may update documentation on versions without publishing or creating a website release. Preserve these rules and the catalog in the next authorized release.
 
-## Current official release: 2026-10-27
+## Current official release: 2026-10-30
 
-**Successfully deployed at 2026-10-27 17:33:40 SGT (workflow last update). Source: [8b7759a](https://github.com/markliangjf/Agro-Alliance-/tree/8b7759ad2f9c0212813660c91e9c75382238aa6d). Deployment: [successful GitHub Pages run](https://github.com/markliangjf/Agro-Alliance-/actions/runs/40481581008).**
+**Successfully deployed at 2026-10-30 17:08:59 SGT (workflow last update). Source: [fdd220b](https://github.com/markliangjf/Agro-Alliance-/tree/fdd220b9b84b2ba402bca6f767950faede8aca63). Deployment: [successful GitHub Pages run](https://github.com/markliangjf/Agro-Alliance-/actions/runs/41031205684).**
 
-- Size desktop homepage sections around the available browser viewport while preserving natural mobile scrolling and readable expanded content.
-- Replace the company teaser image with the supplied industrial campus architectural rendering, clearly labelled as a rendering.
-- Add actual ammonium sulphate packaging photography and preserve full image proportions in the gallery.
-- Make the eight-product range easier to discover with visible counts, prominent next/previous controls, direct page buttons and reduced-motion-aware arrow cues.
-- JavaScript syntax and internal references checked; desktop and mobile previews reviewed. Production HTML, CSS, JavaScript and both new images returned HTTP 200 and matched approved local files. Product pagination verified on the live site.
+- Add independent urea and ammonium sulphate sourcing guides, unique metadata, canonical URLs, structured data, internal links and sitemap entries.
+- Simplify enquiries with optional quantity, expandable requirements and product preselection. Keep WhatsApp and email drafts available.
+- Include privacy information and tested integrations; direct web delivery and GA4 remain disabled pending verified account setup. See [INTEGRATIONS.md](INTEGRATIONS.md).
+- Six functional tests and static link/metadata checks passed; desktop and mobile previews reviewed. Live HTML, sitemap and all changed runtime scripts/styles returned HTTP 200 and matched approved source. Product-to-enquiry selection and disabled integration state verified on the live site.
 
-See [VERSIONS.md](VERSIONS.md) for all nine successful official versions and deployment evidence.
+See [VERSIONS.md](VERSIONS.md) for all ten successful official versions and deployment evidence.
 
 ## Source files
 
 - `index.html`: homepage content
 - `company.html`: company profile, supply and locations
 - `assets/site.css`: responsive styles
-- `assets/site.js`: navigation, product filters, gallery and enquiry builder
+- `assets/site.js`: navigation, product filters and gallery
 - `assets/optimized/`: displayed photographs and maps
 - `assets/media/`: video
-- `scripts/build_preview.py`: linked standalone previews for both pages
+- `scripts/build_preview.py`: linked standalone previews for all five pages
 
+
+- `urea.html`, `ammonium-sulphate.html`: product sourcing guides
+- `privacy.html`: enquiry data and optional analytics information
+- `assets/growth.css`: enquiry and product-guide styles
+- `assets/enquiry-core.js`, `assets/enquiry.js`: enquiry validation and delivery/draft handling
+- `assets/analytics.js`, `assets/site-config.js`: optional analytics and public integration configuration
